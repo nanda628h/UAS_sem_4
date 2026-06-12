@@ -1,0 +1,111 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* PERBAIKAN: Mengubah width menjadi 100% agar Full Screen */
+#container {
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header - Warna Biru Gelap */
+header {
+    padding: 30px 5%;
+    background-color: #004a99;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigasi - Biru Lebih Gelap */
+nav {
+    background: #003366;
+    padding: 10px 5%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
+/* Wrapper Utama - Menggunakan padding persen agar fleksibel */
+#wrapper {
+    display: flex; 
+    padding: 20px 5%;
+    flex: 1; /* Membuat konten utama mengisi sisa ruang vertikal */
+}
+
+/* Area Konten Utama */
+#main {
+    flex: 3;
+    padding-right: 30px;
+}
+
+#main h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Sidebar - Tetap di samping */
+#sidebar {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.widget-box {
+    margin-bottom: 20px;
+}
+
+.widget-box h3.title {
+    border-bottom: 2px solid #004a99; /* Garis Biru */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #004a99;
+}
+
+.widget-box ul {
+    list-style: none;
+}
+
+.widget-box ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.widget-box ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.widget-box ul li a:hover {
+    color: #004a99;
+}
+
+/* Footer - Biru Gelap */
+footer {
+    padding: 20px;
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
